@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabel Melo — Desenvolvedora Front-end &amp; Full Stack</title>
+<meta name="description" content="Portfólio de Isabel Cristina Melo de Santana, desenvolvedora Front-end e Full Stack em Maceió, Alagoas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__logo">ISABEL<span>.</span>MELO</a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#top" class="nav-link">Início</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#experiencia" class="nav-link">Experiência</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer" class="navbar__ext">GitHub <span>↗</span></a>
+      <a href="https://www.linkedin.com/in/isabel-cristina-melo-de-santana-71224b219/" target="_blank" rel="noopener noreferrer" class="navbar__ext">LinkedIn <span>↗</span></a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#top" class="nav-link">Início</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#stack" class="nav-link">Stack</a>
+    <a href="#experiencia" class="nav-link">Experiência</a>
+    <a href="#projetos" class="nav-link">Projetos</a>
+    <a href="#contato" class="nav-link">Contato</a>
+    <div class="mobile-menu__ext">
+      <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/isabel-cristina-melo-de-santana-71224b219/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+
+  <section class="hero" id="hero">
+    <canvas id="particles" class="hero__particles" aria-hidden="true"></canvas>
+    <div class="hero__grid-lines" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__tag reveal"><span class="tag-bracket">&lt;</span>hello world<span class="tag-bracket"> /&gt;</span></p>
+
+        <h1 class="hero__title reveal">
+          <span class="hero__title-sub">Olá, eu sou</span>
+          ISABEL CRISTINA<br>MELO DE SANTANA
+        </h1>
+
+        <p class="hero__role reveal">DESENVOLVEDORA<br>FRONT-END &amp; FULL STACK</p>
+
+        <p class="hero__desc reveal">Transformo ideias em experiências digitais modernas, performáticas e intuitivas.</p>
+
+        <div class="hero__buttons reveal">
+          <a href="#projetos" class="btn btn--primary">Ver meus projetos</a>
+          <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub <span>↗</span></a>
+        </div>
+
+        <div class="hero__tech reveal">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>React Native</span>
+          <span>Java</span>
+          <span>AWS</span>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="code-panel">
+          <div class="code-panel__header">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="code-panel__filename">isabel.ts</span>
+          </div>
+          <pre class="code-panel__body"><code id="typedCode"></code><span class="code-cursor">|</span></pre>
+        </div>
+        <div class="glow-orb glow-orb--1" aria-hidden="true"></div>
+        <div class="glow-orb glow-orb--2" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+ 
+  <section class="section" id="sobre">
+    <div class="section__inner about">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">01 / Sobre mim</span>
+        <h2 class="section__title">Quem desenvolve por trás do código</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>Sou desenvolvedora Front-end com experiência no desenvolvimento de aplicações web e mobile, trabalhando principalmente com React, TypeScript, Vite e React Native.</p>
+          <p>Também possuo experiência em projetos Full Stack utilizando Java, Spring Boot, Angular, APIs REST e microsserviços, além de integração com AWS e Kafka.</p>
+          <p>Tenho experiência com Python, SQL e PostgreSQL e gosto de trabalhar buscando qualidade, performance, escalabilidade e boas práticas.</p>
+        </div>
+
+        <div class="about__timeline reveal">
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__year">2023</span>
+              <p>Projetos freelance e pessoais</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__year">2025</span>
+              <p>Desenvolvedora Front-end / Full Stack</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__year">2027</span>
+              <p>Conclusão do Bacharelado em Sistemas de Informação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section section--alt" id="stack">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">02 / Minha stack</span>
+        <h2 class="section__title">Ferramentas que uso no dia a dia</h2>
+      </div>
+
+      <div class="stack-grid reveal">
+        <article class="stack-card">
+          <div class="stack-card__icon">◆</div>
+          <h3>Front-end</h3>
+          <ul>
+            <li>React</li>
+            <li>Vite</li>
+            <li>React Native</li>
+            <li>TypeScript</li>
+            <li>Angular</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="stack-card">
+          <div class="stack-card__icon">◈</div>
+          <h3>Back-end &amp; Full Stack</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Microsserviços</li>
+            <li>APIs REST</li>
+            <li>Kafka</li>
+            <li>Python</li>
+          </ul>
+        </article>
+
+        <article class="stack-card">
+          <div class="stack-card__icon">▲</div>
+          <h3>Banco de dados</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+          </ul>
+        </article>
+
+        <article class="stack-card">
+          <div class="stack-card__icon">●</div>
+          <h3>Cloud, DevOps &amp; Observabilidade</h3>
+          <ul>
+            <li>AWS</li>
+            <li>CI/CD</li>
+            <li>Datadog</li>
+            <li>Git</li>
+          </ul>
+        </article>
+
+        <article class="stack-card">
+          <div class="stack-card__icon">◇</div>
+          <h3>Metodologias</h3>
+          <ul>
+            <li>Scrum</li>
+            <li>Kanban</li>
+            <li>Code Review</li>
+            <li>Testes</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experiencia">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">03 / Experiência</span>
+        <h2 class="section__title">Trajetória profissional</h2>
+      </div>
+
+      <div class="exp-timeline reveal">
+        <div class="exp-card">
+          <div class="exp-card__line" aria-hidden="true"></div>
+          <div class="exp-card__content">
+            <div class="exp-card__top">
+              <div>
+                <h3>Estagiária em TI</h3>
+                <p class="exp-card__company">Tribunal de Contas do Estado de Alagoas</p>
+              </div>
+              <div class="exp-card__meta">
+                <span>Abril/2025 — Atual</span>
+                <span>Presencial</span>
+              </div>
+            </div>
+
+            <p class="exp-card__desc">Atuação no desenvolvimento e manutenção de aplicações web e mobile, participando de diferentes etapas do desenvolvimento de software.</p>
+
+            <ul class="exp-card__list">
+              <li>Desenvolvimento de interfaces web e mobile com React, Vite, React Native e TypeScript.</li>
+              <li>Desenvolvimento e manutenção de aplicações utilizando Java + Spring Boot e Angular.</li>
+              <li>Projeto e implementação de APIs REST e microsserviços.</li>
+              <li>Integração de sistemas com serviços da AWS e Kafka.</li>
+              <li>Monitoramento de aplicações e análise de métricas com Datadog.</li>
+              <li>Trabalho com Python, SQL e PostgreSQL.</li>
+              <li>Participação em discussões técnicas, definições de arquitetura e revisões de código.</li>
+              <li>Atuação em ambiente ágil com equipes multidisciplinares e distribuídas.</li>
+              <li>Foco em qualidade, performance, escalabilidade e boas práticas de desenvolvimento.</li>
+            </ul>
+
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Angular</span>
+              <span class="tag">APIs REST</span>
+              <span class="tag">Microsserviços</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Datadog</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section section--alt" id="projetos">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">04 / Projetos</span>
+        <h2 class="section__title">O que venho construindo</h2>
+        <p class="section__sub">Repositórios públicos do meu <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--1" aria-hidden="true">
+            <span class="project-card__glyph">{ }</span>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/Isabellmello/estrutura-de-dados" target="_blank" rel="noopener noreferrer" class="project-card__cta">Ver no GitHub ↗</a>
+          </div>
+          <div class="project-card__body">
+            <h3>estrutura-de-dados</h3>
+            <p>Visualização interativa de estruturas de dados — árvores, listas e tabelas hash — construída com HTML, CSS e JavaScript puro.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--2" aria-hidden="true">
+            <span class="project-card__glyph">⬡</span>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/Isabellmello/Atv-de-grafos" target="_blank" rel="noopener noreferrer" class="project-card__cta">Ver no GitHub ↗</a>
+          </div>
+          <div class="project-card__body">
+            <h3>Atv-de-grafos</h3>
+            <p>Atividade acadêmica de teoria dos grafos, com resolução de Sudoku aplicando lógica de grafos e backtracking.</p>
+            <div class="tag-row">
+              <span class="tag">Algoritmos</span>
+              <span class="tag">Grafos</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--3" aria-hidden="true">
+            <span class="project-card__glyph">▤</span>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/Isabellmello/graficodERP" target="_blank" rel="noopener noreferrer" class="project-card__cta">Ver no GitHub ↗</a>
+          </div>
+          <div class="project-card__body">
+            <h3>graficodERP</h3>
+            <p>Painel de indicadores estilo ERP com gráficos e cards de dados, construído em React com Tailwind CSS.</p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--4" aria-hidden="true">
+            <span class="project-card__glyph">➤</span>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/Isabellmello/Delivery-optmizer" target="_blank" rel="noopener noreferrer" class="project-card__cta">Ver no GitHub ↗</a>
+          </div>
+          <div class="project-card__body">
+            <h3>Delivery-optmizer</h3>
+            <p>Projeto voltado à otimização de rotas de entrega.</p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--5" aria-hidden="true">
+            <span class="project-card__glyph">◫</span>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/Isabellmello/Prototipo-de-Ecommerce" target="_blank" rel="noopener noreferrer" class="project-card__cta">Ver no GitHub ↗</a>
+          </div>
+          <div class="project-card__body">
+            <h3>Prototipo-de-Ecommerce</h3>
+            <p>Protótipo de loja virtual explorando fluxo de navegação e experiência de compra.</p>
+            <div class="tag-row">
+              <span class="tag">Front-end</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- FREELANCE -->
+      <div class="freelance reveal">
+        <h3 class="freelance__title">Projetos freelance &amp; pessoais</h3>
+        <div class="freelance__grid">
+          <div class="freelance__item">
+            <span class="freelance__icon">🍽</span>
+            <p>Desenvolvimento de sites para restaurantes com foco em cardápio digital, responsividade e boa experiência do usuário, utilizando React, Vite e TypeScript.</p>
+          </div>
+          <div class="freelance__item">
+            <span class="freelance__icon">📱</span>
+            <p>Criação de páginas e landing pages para redes sociais com design moderno e integração com formulários e WhatsApp.</p>
+          </div>
+          <div class="freelance__item">
+            <span class="freelance__icon">⚙</span>
+            <p>Desenvolvimento de aplicativos mobile utilizando React Native e TypeScript.</p>
+          </div>
+          <div class="freelance__item">
+            <span class="freelance__icon">🗄</span>
+            <p>Utilização de Python, SQL e PostgreSQL em projetos de backend e persistência de dados.</p>
+          </div>
+          <div class="freelance__item">
+            <span class="freelance__icon">🔧</span>
+            <p>Aplicação de boas práticas de versionamento com Git, organização de código e deploy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="section" id="processo">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">05 / Meu processo</span>
+        <h2 class="section__title">Como eu trabalho</h2>
+      </div>
+
+      <div class="process-grid reveal">
+        <div class="process-card">
+          <span class="process-card__num">01</span>
+          <h3>Pensar</h3>
+          <p>Entender o problema antes de começar a desenvolver.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-card__num">02</span>
+          <h3>Construir</h3>
+          <p>Transformar ideias em interfaces e soluções funcionais.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-card__num">03</span>
+          <h3>Refinar</h3>
+          <p>Buscar performance, organização e boas práticas.</p>
+        </div>
+        <div class="process-card">
+          <span class="process-card__num">04</span>
+          <h3>Entregar</h3>
+          <p>Criar soluções escaláveis e preparadas para evolução.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section section--alt" id="diferenciais">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">06 / Diferenciais</span>
+        <h2 class="section__title">O que levo para os projetos</h2>
+      </div>
+
+      <div class="diff-grid reveal">
+        <div class="diff-card">
+          <h3>Proatividade</h3>
+          <p>Busco entender o problema e encontrar soluções.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Colaboração</h3>
+          <p>Experiência trabalhando com equipes multidisciplinares e distribuídas.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Escalabilidade</h3>
+          <p>Vivência com arquiteturas de microsserviços e aplicações escaláveis.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Comunicação</h3>
+          <p>Boa comunicação para transformar necessidades em soluções.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO + IDIOMA -->
+  <section class="section" id="formacao">
+    <div class="section__inner formacao">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">07 / Formação</span>
+        <h2 class="section__title">Base acadêmica</h2>
+      </div>
+
+      <div class="formacao__grid">
+        <div class="formacao__card reveal">
+          <h3>Bacharelado em Sistemas de Informação</h3>
+          <p class="formacao__school">CESMAC</p>
+          <div class="formacao__progress">
+            <span class="formacao__year">2023</span>
+            <div class="formacao__bar"><div class="formacao__fill"></div></div>
+            <span class="formacao__year">2027</span>
+          </div>
+        </div>
+
+        <div class="lang-card reveal">
+          <span class="lang-card__label">Idioma</span>
+          <h3>Inglês</h3>
+          <p>Intermediário</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact" id="contato">
+    <div class="glow-orb glow-orb--contact" aria-hidden="true"></div>
+    <div class="section__inner contact__inner reveal">
+      <h2 class="contact__title">VAMOS CRIAR ALGO<br>INCRÍVEL?</h2>
+      <p class="contact__text">Tem um projeto em mente, uma oportunidade ou simplesmente quer conversar sobre tecnologia?</p>
+
+      <a href="mailto:isabellmelosantana@gmail.com" class="contact__email">isabellmelosantana@gmail.com</a>
+
+      <div class="contact__buttons">
+        <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer" class="btn btn--outline">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/isabel-cristina-melo-de-santana-71224b219/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn ↗</a>
+        <a href="mailto:isabellmelosantana@gmail.com" class="btn btn--primary">Enviar email</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="navbar__logo">ISABEL<span>.</span>MELO</a>
+      <p>Desenvolvedora Front-end | Full Stack</p>
+      <p class="footer__stack">React • TypeScript • React Native • Java • AWS</p>
+    </div>
+
+    <div class="footer__links">
+      <a href="https://github.com/Isabellmello" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/isabel-cristina-melo-de-santana-71224b219/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:isabellmelosantana@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 Isabel Cristina Melo de Santana</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
